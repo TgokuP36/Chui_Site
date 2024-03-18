@@ -1,0 +1,88 @@
+<DOCTYPE html>
+    <html lang = "en - US">
+        <head>
+            <title> Derrick Gichaba </title>
+            <link rel="icon" type="image/png" href="favicon-32x32.png">
+    <meta name="theme-color" content="#ffffff">
+            <style>
+                img {
+                    display : block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width : 10%;
+                }
+                a {
+                    display:block;
+                    font-size: 200%;
+                    color: black;
+                    font-family:monospace;
+                    font-style:oblique;
+                } 
+                .dropbtn {
+                    background-color: rgb(255, 255, 255);
+                    color: rgb(255, 255, 255);
+                    padding: 16px;
+                    font-size: 16px;
+                    border: none;
+                    cursor: pointer;
+                }
+                .dropbtn:hover, .dropbtn:focus {
+                    background-color: rgb(255, 255, 255);
+                }
+                .dropdown {
+                    position: relative;
+                    display: inline-block;
+                }
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #ffffff;
+                    min-width: 160px;
+                    overflow: auto;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    z-index: 1;
+                }
+    
+                .dropdown a:hover {background-color: #ddd;}
+    
+                .show {
+                    display: block;
+                }
+                
+    
+            </style>
+        </head>
+        <body>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn"> <img src = "images/button.png" alt = "THE BUTTON"> </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href = "http://127.0.0.1:5500/html/Derricks_new_website_HomePage.html">Home. </a> 
+                    <a href = "http://127.0.0.1:5500/html/Derricks_new_website_LivePhotography.html"> Live Photography. </a> 
+                    <a href = "http://127.0.0.1:5500/html/Derricks_new_website_Portfolio.html"> Portfolio. </a>
+                    <a href = "http://127.0.0.1:5500/html/Derricks_new_website_About.html"> About. </a>
+                    <a href = "https://www.instagram.com/Chui_lens/"> Instagram. </a> 
+                    <a href = "http://127.0.0.1:5500/html/Derricks_new_website_Contact.html"> Contact. </a>
+                </div>
+            </div>
+    
+            <script>
+                function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
+                window.onclick = function(event) {
+                    if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+            </script>
+    
+            <img src = "images/Chui_Logo.png" alt = "Chui's Logo">
+        </body>
+    </html>

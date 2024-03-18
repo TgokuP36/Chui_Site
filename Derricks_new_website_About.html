@@ -1,0 +1,186 @@
+<DOCTYPE html>
+    <html lang = "en - US">
+        <head>
+            <title> Derrick Gichaba </title>
+            <link rel="icon" type="image/png" href="favicon-32x32.png">
+    <meta name="theme-color" content="#ffffff">
+            <style>
+                h1 {
+                    display: block;
+                    text-align: left;
+                    color:rgb(38, 38, 38);
+                    font-size:300%;
+                    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+                pre {
+                    font-size:110%;
+                    font-family:'Times New Roman', Times, serif;
+                }
+                img {
+                    display : block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width : 10%;
+                }
+                .img2 {
+                    display : block;
+                    width : 35%;
+                    margin-left : 15%;
+                    margin-right : auto;
+                    margin-bottom : 47%;
+                    
+                }
+                a {
+                    display:block;
+                    font-size: 200%;
+                    color: black;
+                    font-family:monospace;
+                    font-style:oblique;
+                } 
+                .dropbtn {
+                    background-color: lightgray;
+                    color: rgb(255, 255, 255);
+                    padding: 16px;
+                    font-size: 16px;
+                    border: none;
+                    cursor: pointer;
+                }
+                .dropbtn:hover, .dropbtn:focus {
+                    background-color:lightgray;
+                }
+                .dropdown {
+                    position: relative;
+                    display: inline-block;
+                }
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #ffffff;
+                    min-width: 160px;
+                    overflow: auto;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    z-index: 1;
+                }
+    
+                .dropdown a:hover {background-color: lightgray;}
+    
+                .show {
+                    display: block;
+                }
+
+                .side_by_side {
+                    display : flex;
+                    align-items : center;
+                    flex-direction : row;
+                }
+                
+    
+            </style>
+        </head>
+        <body style = "background-color: lightgray;">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn"> <img src = "images/button.png" alt = "THE BUTTON"> </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href = "http://127.0.0.1:5500/html/Derricks_new_website_HomePage.html">Home. </a> 
+                    <a href = "http://127.0.0.1:5500/html/Derricks_new_website_LivePhotography.html"> Live Photography. </a> 
+                    <a href = "http://127.0.0.1:5500/html/Derricks_new_website_Portfolio.html"> Portfolio. </a>
+                    <a href = "http://127.0.0.1:5500/html/Derricks_new_website_About.html"> About. </a>
+                    <a href = "https://www.instagram.com/Chui_lens/"> Instagram. </a> 
+                    <a href = "http://127.0.0.1:5500/html/Derricks_new_website_Contact.html"> Contact. </a>
+                </div>
+            </div>
+    
+            <script>
+                function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
+                window.onclick = function(event) {
+                    if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+            </script>
+    
+            <img src = "images/Chui_Logo.png" alt = "Chui's Logo">
+            <hr>
+            <h1><b>Derrick Gichaba</b></h1>
+<section>
+    <div class = "side_by_side">
+    <pre>
+        I am a multidisciplinary artist, born in Kenya and based in Minnesota,
+
+    who has found passion for dance, photography, film, and fashion!
+
+
+
+    As a kid, I always found myself dancing for fun with my family and friends,
+
+    but I've been researching and teaching myself to be a professional dancer since 2014.
+
+    Growing up in an African American culture, I picked up Breakdancing for my
+
+    style of dance and eventually ventured off into Hip Hop freestyling.
+
+
+                    
+    During my journey through high school, I had the privilege of connecting
+
+    with others who also enjoyed dancing! We spent a lot of time creating
+
+    spaces together to express ourselves through movement. As time moved on, 
+
+    we continued developing our skills as dancers,and eventually became
+
+    colleagues by creating a crew known as Squad 7.
+
+
+                    
+    This community of dancers has connected me with a monumental amount of artists,
+
+    not only within the Twin Cities,but across the nation and overseas! Ironically,
+
+    this led me to pursue photography and videography professionally.At the age of 16,
+
+    I was able to save up money in high school to buy my first camera—that is when the
+
+    journey of this art discipline began. Seeing different movement artists expressing
+
+    themselves from a plethora of backgrounds gave me the desire to capture art digitally. 
+
+
+                    
+    So far in my career as a dancer, I became a member of a dance crew that trains and
+
+    performs together. I also teach Hip Hop at an up and coming dance studio called
+
+    Hothouse Mpls, and I host sessions where people of all dance backgrounds can customized
+
+    learn and express themselves! 
+
+
+                    
+    In regards to my career as a photographer and videographer, I’ve had the pleasure of
+
+    working with multiple local artists of all disciplines, while also taking advantage of
+
+    the opportunity to shoot big name artists like: Ari Lennox, Noname, Mereba to name a few. 
+
+
+                    
+    During the pandemic, I picked up the art of fashion styling and design. I’ve been successful
+
+    in creating customized clothing and designing items of my own. I’m in the process of creating
+
+    a brand where I’ll be able to create clothing for myself and for others to enjoy!</pre>
+                <img src = "images/Derricks_FACE.png" class = "img2">  </div>
+</section>
+
+        </body>
+    </html>

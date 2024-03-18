@@ -1,0 +1,275 @@
+<DOCTYPE html>
+<html lang = "en - US">
+    <head>
+        <title> Derrick Gichaba </title>
+        <link rel="icon" type="image/png" href="favicon-32x32.png">
+        <meta name="theme-color" content="#ffffff">
+        <style>
+
+            /* This is the MISC CSS*/
+            .btn_img{
+                display: block;
+                width:15%;
+            }
+            .Chui_logo{
+                    display : flex;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width : 12%;
+                }
+            
+            h2{
+                font-size: 400%;
+            }
+            /* This is the MISC CSS*/
+
+
+
+            /* This is the Drop Down Menu CSS*/
+            a {
+                    display:block;
+                    font-size: 200%;
+                    color: black;
+                    font-family:monospace;
+                    font-style:oblique;
+                }
+            .dropbtn {
+                    background-color: lightgray;
+                    color: lightgray;
+                    padding: 16px;
+                    font-size: 16px;
+                    border: none;
+                    cursor: pointer;
+                }
+            .dropbtn:hover, .dropbtn:focus {
+                    background-color: lightgray;
+                }
+            .dropdown {
+                    position: relative;
+                    display: inline-block;
+                }
+            .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: lightgray; 
+                    overflow: auto;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    z-index: 1;
+                }
+    
+            .dropdown a:hover {background-color: #ffffff;}
+    
+            .show {
+                    display: block;
+                }
+            /* This is the Drop Down Menu CSS*/
+
+            .side_by_side {
+                    display : flex;
+                    align-items : center;
+                    flex-direction : row;
+                }
+
+            /* This is the Revolving Logo Bar */
+
+            .image-container {
+                    overflow-x:hidden;
+                    max-width: 5000px;
+                }
+            .image-wrapper {
+                    display: grid;
+                    grid-auto-flow: column;
+                    grid-auto-columns: calc((100% - (33rem * (var(--per-view) - 1))) / var(--per-view));
+                    grid-gap: 6.5rem;
+                    position: relative;
+                    left: 0;
+                    transition: .3s;
+                }
+            .image-wrapper > * {
+                    aspect-ratio: 16 / 9;
+                }
+            .logos {
+                    width: 200%;
+                    height: 280%;
+                    object-fit:contain;
+                    display: flex;
+                    border-radius: .5rem;
+                }
+            /* This is the Revolving Logo Bar */
+
+            /* This is going to be Background CSS */
+
+            .film_reel {
+                background-color:white;
+            }
+
+            .sport_film_reel {
+                background-color:white;
+            }
+
+            .portfolio {
+                background-color:white;
+            }
+            /* This is going to be Background CSS */
+            
+        </style>
+    </head>
+
+
+
+
+    <body style = "background-color:lightgray;">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"> <img src = "images/button.png" alt = "THE BUTTON" class = "btn_img"> </button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href = "http://127.0.0.1:5500/html/Derricks_new_website_HomePage.html">Home. </a> 
+                <a href = "http://127.0.0.1:5500/html/Derricks_new_website_LivePhotography.html"> Live Photography. </a> 
+                <a href = "http://127.0.0.1:5500/html/Derricks_new_website_Portfolio.html"> Portfolio. </a>
+                <a href = "http://127.0.0.1:5500/html/Derricks_new_website_About.html"> About. </a>
+                <a href = "https://www.instagram.com/Chui_lens/"> Instagram. </a> 
+                <a href = "http://127.0.0.1:5500/html/Derricks_new_website_Contact.html"> Contact. </a>
+            </div>
+        </div>
+
+        <script>
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');                  
+                        }
+                    }
+                }
+            }
+        </script>
+
+        <img src = "images/Chui_Logo.png" class = "Chui_logo">
+  
+        <section class = "film_reel">
+
+            <h2> FILM REEL </h2>
+
+        </section>
+
+        <section class = "sport_film_reel">
+
+            <h2> SPORTS FILM REEL </h2>
+
+        </section>
+
+        <section>    
+            <div class="image-container">
+                <div class="image-wrapper">
+
+                    <div>
+                        <img src = "Logos (RESIZED)/auggies_logo.png" class = "logos"> 
+                    </div>
+
+                    <div>
+                        <img src = "Logos (RESIZED)/concordia_logo.png" class = "logos">
+                    </div>
+
+                    <div>
+                        <img src = "Logos (RESIZED)/Lululemon_logo.png" class = "logos">
+                    </div>
+
+                    <div>
+                        <img src = "Logos (RESIZED)/MNTW_logo.png" class = "logos">
+                    </div>
+
+                    <div>
+                        <img src = "Logos (RESIZED)/NS_boxing_logo.png" class = "logos">
+                    </div>
+
+                    <div>
+                        <img src = "Logos (RESIZED)/TC_toy_drive_logo.png" class = "logos">
+                    </div>
+
+                    <div>
+                        <img src = "Logos (RESIZED)/UMN_logo.png" class = "logos">
+                    </div>
+
+                    <div>
+                        <img src = "Logos (RESIZED)/Emery_Logo.png" class = "logos">
+                    </div>
+
+                    <div>
+                        <img src = "Logos (RESIZED)/auggies_logo.png" class = "logos"> 
+                    </div>
+
+                    <div>
+                        <img src = "Logos (RESIZED)/concordia_logo.png" class = "logos">
+                    </div>
+
+                    <div>
+                        <img src = "Logos (RESIZED)/Lululemon_logo.png" class = "logos">
+                    </div>
+
+                    <div>
+                        <img src = "Logos (RESIZED)/MNTW_logo.png" class = "logos">
+                    </div>
+
+                    <div>
+                        <img src = "Logos (RESIZED)/NS_boxing_logo.png" class = "logos">
+                    </div>
+
+                    <div>
+                        <img src = "Logos (RESIZED)/TC_toy_drive_logo.png" class = "logos">
+                    </div>
+
+                    <div>
+                        <img src = "Logos (RESIZED)/UMN_logo.png" class = "logos">
+                    </div>
+
+                    <div>
+                        <img src = "Logos (RESIZED)/Emery_Logo.png" class = "logos">
+                    </div>
+                </div>
+            </div>
+            <script>
+                const imageWrapper = document.querySelector('.image-wrapper')
+                const imageItems = document.querySelectorAll('.image-wrapper > *')
+                const imageLength = imageItems.length
+                const perView = 3
+                let totalScroll = 0
+                const delay = 2000
+
+                imageWrapper.style.setProperty('--per-view', perView)
+                for(let i = 0; i < perView; i++) {
+                    imageWrapper.insertAdjacentHTML('beforeend', imageItems[i].outerHTML)
+                    }
+
+                let autoScroll = setInterval(scrolling, delay)
+
+                function scrolling() {
+                    totalScroll++
+                    if(totalScroll == imageLength - 2) {
+                    clearInterval(autoScroll)
+                    totalScroll = 1
+                    imageWrapper.style.transition = '0s'
+                    imageWrapper.style.left = '0'
+                    autoScroll = setInterval(scrolling, delay)
+                    }
+                    const widthEl = document.querySelector('.image-wrapper > :first-child').offsetWidth + 10
+                    imageWrapper.style.left = `-${totalScroll * widthEl}px`
+                    imageWrapper.style.transition = '.3s'
+                }
+            </script>
+
+        </section>
+
+        <section class = "portfolio">
+
+            <h2> PORTFOLIO </h2>
+
+        </section>
+
+
+    </body>
+</html>
